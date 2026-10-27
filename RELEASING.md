@@ -1,5 +1,7 @@
 # 可信发布流程
 
+> 当前状态（2026-10-27）：`1.0.0` 由本地 2FA OTP 首发；`1.0.1` 由 GitHub Actions + Trusted Publishing 发布并带 SLSA provenance。仓库与 trust 配置使用 `xvx2200/ds-conversation-search`。
+
 目标：npm 上的每个版本都由 GitHub Actions 构建并带有 npm provenance；日常发布不再依赖本地长期 token 或逐个输入 2FA。
 
 ## 0. 一次性引导：先让包存在
@@ -27,7 +29,7 @@ git init
 git add .
 git commit -m "release: ds-conversation-search 1.0.0"
 git branch -M main
-git remote add origin https://github.com/<owner>/<repo>.git
+git remote add origin https://github.com/xvx2200/ds-conversation-search.git
 git push -u origin main
 ```
 
@@ -36,7 +38,7 @@ git push -u origin main
 ```json
 "repository": {
   "type": "git",
-  "url": "git+https://github.com/<owner>/<repo>.git"
+  "url": "git+https://github.com/xvx2200/ds-conversation-search.git"
 }
 ```
 
@@ -47,7 +49,7 @@ git push -u origin main
 ```bash
 npm trust github ds-conversation-search \
   --file publish.yml \
-  --repo <owner>/<repo> \
+  --repo xvx2200/ds-conversation-search \
   --environment npm \
   --allow-publish
 ```

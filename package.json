@@ -46,10 +46,10 @@
   "author": "fux2200",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yanfeifu/ds-conversation-search.git"
+    "url": "git+https://github.com/xvx2200/ds-conversation-search.git"
   },
-  "homepage": "https://github.com/yanfeifu/ds-conversation-search#readme",
+  "homepage": "https://github.com/xvx2200/ds-conversation-search#readme",
   "bugs": {
-    "url": "https://github.com/yanfeifu/ds-conversation-search/issues"
+    "url": "https://github.com/xvx2200/ds-conversation-search/issues"
   }
 }
