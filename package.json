@@ -1,6 +1,6 @@
 {
   "name": "ds-conversation-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search conversation titles, user messages, and assistant answer text in the current conversation or workspace, with fuzzy, regex, and keyword matching.",
   "type": "module",
   "exports": {
