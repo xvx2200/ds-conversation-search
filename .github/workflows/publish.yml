@@ -1,0 +1,38 @@
+name: Publish npm package
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: npm
+    steps:
+      - name: Check out the release
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - name: Use npm with trusted publishing support
+        run: npm install --global npm@^11.15.0
+
+      - name: Check the release tag matches package.json
+        if: github.event_name == 'release'
+        run: |
+          node -e "const v = require('./package.json').version; const tag = process.env.GITHUB_REF_NAME; if (tag !== 'v' + v && tag !== v) { console.error('Tag ' + tag + ' does not match version ' + v); process.exit(1); }"
+
+      - name: Install from the lockfile without lifecycle scripts
+        run: npm ci --ignore-scripts
+
+      - name: Publish with provenance
+        run: npm publish --provenance

@@ -1,0 +1,55 @@
+{
+  "name": "ds-conversation-search",
+  "version": "1.0.0",
+  "description": "Search conversation titles, user messages, and assistant answer text in the current conversation or workspace, with fuzzy, regex, and keyword matching.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "docs/*.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "conversation-search",
+    "search",
+    "fuzzy",
+    "regex"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "author": "fux2200",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanfeifu/ds-conversation-search.git"
+  },
+  "homepage": "https://github.com/yanfeifu/ds-conversation-search#readme",
+  "bugs": {
+    "url": "https://github.com/yanfeifu/ds-conversation-search/issues"
+  }
+}

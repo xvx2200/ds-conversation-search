@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation Search",
+    "description": "Search message history in the current conversation or every conversation of this workspace, with fuzzy, regex, and keyword matching."
+  }
+}

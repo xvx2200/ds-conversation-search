@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="920" viewBox="0 0 1280 920" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Segoe UI',sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#1f2328" flood-opacity="0.10"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#1f2328" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="920" fill="#eef1f5"/>
+
+  <text x="40" y="52" font-size="22" font-weight="700" fill="#1f2328">对话检索 · 使用位置示意图</text>
+  <text x="40" y="78" font-size="12" fill="#6b7280">示意图，非实际截图。实际界面随主题、语言和窗口宽度略有差异。</text>
+
+  <rect x="1048" y="30" width="192" height="30" rx="15" fill="#ffffff" stroke="#d9dee5"/>
+  <text x="1144" y="50" font-size="11" fill="#6b7280" text-anchor="middle">示意图 · 非实际截图</text>
+
+  <!-- ===================== App window ===================== -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="104" width="600" height="700" rx="14" fill="#ffffff" stroke="#d9dee5"/>
+  </g>
+  <path d="M40 118a14 14 0 0 1 14-14h572a14 14 0 0 1 14 14v28H40z" fill="#f7f8fa"/>
+  <line x1="40" y1="146" x2="640" y2="146" stroke="#e3e7ec"/>
+  <circle cx="60" cy="125" r="4" fill="#d0d5dc"/>
+  <circle cx="76" cy="125" r="4" fill="#d0d5dc"/>
+  <circle cx="92" cy="125" r="4" fill="#d0d5dc"/>
+  <text x="116" y="129" font-size="11" fill="#8a919b">DeepSeek Harness</text>
+
+  <!-- sidebar -->
+  <path d="M40 146h170v644a14 14 0 0 1-14 14H54a14 14 0 0 1-14-14z" fill="#f6f7f9"/>
+  <line x1="210" y1="146" x2="210" y2="804" stroke="#e7eaee"/>
+  <circle cx="62" cy="174" r="8" fill="#247bbf"/>
+  <text x="78" y="179" font-size="12" font-weight="600" fill="#1f2328">DeepSeek</text>
+  <text x="56" y="212" font-size="11" fill="#8a919b">工作区</text>
+
+  <rect x="50" y="224" width="150" height="34" rx="8" fill="#e7f0fa"/>
+  <rect x="58" y="236" width="4" height="10" rx="2" fill="#247bbf"/>
+  <text x="72" y="246" font-size="12" fill="#1f2328">修复登录超时</text>
+  <text x="64" y="288" font-size="12" fill="#4b5563">部署脚本排查</text>
+  <text x="64" y="322" font-size="12" fill="#4b5563">对话检索插件</text>
+  <text x="64" y="356" font-size="11" fill="#9aa1ab">更多…</text>
+  <circle cx="66" cy="776" r="7" fill="none" stroke="#8a919b" stroke-width="1.4"/>
+  <circle cx="66" cy="776" r="2.5" fill="#8a919b"/>
+  <text x="82" y="780" font-size="12" fill="#6b7280">设置</text>
+
+  <!-- conversation header -->
+  <text x="232" y="180" font-size="14" font-weight="600" fill="#1f2328">修复登录超时</text>
+  <text x="232" y="198" font-size="11" fill="#8a919b">当前工作区 · 3 分钟前</text>
+  <line x1="210" y1="212" x2="640" y2="212" stroke="#eef0f3"/>
+
+  <!-- messages -->
+  <rect x="390" y="238" width="220" height="62" rx="12" fill="#e7f0fa"/>
+  <text x="406" y="262" font-size="12" fill="#1f2328">登录一直超时，帮我看看</text>
+  <text x="406" y="282" font-size="12" font-weight="600" fill="#1f5f9e">错误码 401</text>
+
+  <rect x="232" y="318" width="308" height="86" rx="12" fill="#f4f5f7"/>
+  <text x="248" y="342" font-size="12" fill="#1f2328">先检查 token 过期时间，再看请求头</text>
+  <text x="248" y="362" font-size="12" fill="#1f2328">和时区。401 / 403 都指向鉴权。</text>
+  <text x="248" y="386" font-size="11" fill="#8a919b">我来帮你定位，先检索一下历史记录。</text>
+
+  <!-- composer card -->
+  <rect x="226" y="530" width="396" height="140" rx="14" fill="#ffffff" stroke="#dfe3e8" filter="url(#soft)"/>
+  <text x="244" y="560" font-size="12" fill="#9aa1ab">给 DeepSeek 发送消息…</text>
+
+  <!-- shortcut badge -->
+  <rect x="500" y="548" width="78" height="26" rx="7" fill="#f4f5f7" stroke="#d9dee5"/>
+  <text x="539" y="565" font-size="11" font-weight="600" fill="#4b5563" text-anchor="middle">⌘⇧K</text>
+  <text x="578" y="540" font-size="10" fill="#e8590c" text-anchor="end">② 快捷键</text>
+
+  <!-- tool row -->
+  <circle cx="246" cy="640" r="7" fill="none" stroke="#8a919b" stroke-width="1.4"/>
+  <path d="M243 637l6 6M249 637l-6 6" stroke="#8a919b" stroke-width="1.2" stroke-linecap="round"/>
+  <rect x="268" y="628" width="58" height="24" rx="7" fill="#f4f5f7"/>
+  <text x="297" y="644" font-size="11" fill="#6b7280" text-anchor="middle">权限</text>
+  <rect x="334" y="628" width="72" height="24" rx="7" fill="#f4f5f7"/>
+  <text x="370" y="644" font-size="11" fill="#6b7280" text-anchor="middle">模型 ▾</text>
+  <circle cx="602" cy="640" r="14" fill="#247bbf"/>
+  <path d="M597 640h10M603 635l5 5-5 5" stroke="#ffffff" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- dock below the composer -->
+  <text x="240" y="694" font-size="11" fill="#8a919b">活动</text>
+  <text x="286" y="694" font-size="11" fill="#8a919b">用量</text>
+  <rect x="336" y="678" width="82" height="28" rx="14" fill="#fff3c4" stroke="#f0b429" stroke-width="1.5"/>
+  <circle cx="352" cy="692" r="5.5" fill="none" stroke="#8a5a00" stroke-width="1.6"/>
+  <path d="M356 696l4 4" stroke="#8a5a00" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="366" y="696" font-size="12" font-weight="600" fill="#8a5a00">检索</text>
+  <circle cx="438" cy="692" r="11" fill="#e8590c"/>
+  <text x="438" y="696" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="456" y="696" font-size="11" fill="#e8590c">点这里打开</text>
+
+  <!-- ===================== Zoom inset ===================== -->
+  <rect x="40" y="824" width="600" height="76" rx="12" fill="#ffffff" stroke="#d9dee5"/>
+  <text x="58" y="848" font-size="11" fill="#8a919b">输入框下方（放大）</text>
+  <text x="58" y="878" font-size="12" fill="#6b7280">活动</text>
+  <text x="106" y="878" font-size="12" fill="#6b7280">用量</text>
+  <rect x="160" y="858" width="92" height="28" rx="14" fill="#fff3c4" stroke="#f0b429" stroke-width="1.5"/>
+  <circle cx="176" cy="872" r="5.5" fill="none" stroke="#8a5a00" stroke-width="1.6"/>
+  <path d="M180 876l4 4" stroke="#8a5a00" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="190" y="877" font-size="12" font-weight="600" fill="#8a5a00">检索</text>
+  <path d="M262 872h22" stroke="#e8590c" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M282 868l4 4-4 4" fill="none" stroke="#e8590c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="294" y="877" font-size="11" fill="#e8590c">没有这个胶囊时，先刷新页面</text>
+
+  <!-- ===================== Search panel ===================== -->
+  <g filter="url(#shadow)">
+    <rect x="680" y="104" width="560" height="700" rx="16" fill="#ffffff" stroke="#d9dee5"/>
+  </g>
+  <text x="704" y="136" font-size="14" font-weight="600" fill="#1f2328">对话检索</text>
+  <text x="1214" y="136" font-size="18" fill="#8a919b" text-anchor="middle">×</text>
+  <line x1="680" y1="152" x2="1240" y2="152" stroke="#eef0f3"/>
+
+  <!-- input -->
+  <rect x="700" y="168" width="520" height="40" rx="9" fill="#f7f8fa" stroke="#cfd6df"/>
+  <circle cx="718" cy="188" r="5.5" fill="none" stroke="#8a919b" stroke-width="1.5"/>
+  <path d="M722 192l4 4" stroke="#8a919b" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="736" y="193" font-size="13" fill="#1f2328">错误码</text>
+  <rect x="790" y="180" width="1.5" height="16" fill="#247bbf"/>
+
+  <!-- mode row -->
+  <rect x="700" y="224" width="196" height="32" rx="8" fill="#f1f3f5"/>
+  <rect x="702" y="226" width="58" height="28" rx="6" fill="#ffffff"/>
+  <text x="731" y="245" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">模糊</text>
+  <text x="798" y="245" font-size="11" fill="#6b7280" text-anchor="middle">关键词</text>
+  <text x="866" y="245" font-size="11" fill="#6b7280" text-anchor="middle">正则</text>
+  <rect x="908" y="224" width="32" height="32" rx="7" fill="#ffffff" stroke="#d9dee5"/>
+  <text x="924" y="245" font-size="11" font-weight="600" fill="#4b5563" text-anchor="middle">Aa</text>
+  <text x="956" y="245" font-size="11" fill="#8a919b">区分大小写</text>
+
+  <!-- scope row -->
+  <text x="700" y="294" font-size="11" fill="#8a919b">检索范围</text>
+  <rect x="760" y="276" width="196" height="30" rx="8" fill="#f1f3f5"/>
+  <rect x="762" y="278" width="96" height="26" rx="6" fill="#ffffff"/>
+  <text x="810" y="296" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">当前对话</text>
+  <text x="906" y="296" font-size="11" fill="#6b7280" text-anchor="middle">当前工作区</text>
+  <line x1="680" y1="316" x2="1240" y2="316" stroke="#eef0f3"/>
+
+  <!-- results -->
+  <text x="704" y="344" font-size="12" font-weight="600" fill="#1f2328">修复登录超时</text>
+  <text x="1196" y="344" font-size="10" fill="#8a919b" text-anchor="end">10:24</text>
+  <rect x="704" y="358" width="28" height="18" rx="9" fill="#f1f3f5"/>
+  <text x="718" y="371" font-size="10" fill="#6b7280" text-anchor="middle">你</text>
+  <text x="740" y="372" font-size="12" fill="#1f2328">登录一直超时，帮我看看</text>
+  <rect x="884" y="360" width="70" height="18" rx="3" fill="#fff3c4"/>
+  <text x="889" y="373" font-size="12" font-weight="600" fill="#8a5a00">错误码 401</text>
+
+  <text x="704" y="434" font-size="12" font-weight="600" fill="#1f2328">部署脚本排查</text>
+  <text x="1196" y="434" font-size="10" fill="#8a919b" text-anchor="end">昨天</text>
+  <rect x="704" y="448" width="52" height="18" rx="9" fill="#f1f3f5"/>
+  <text x="730" y="461" font-size="10" fill="#6b7280" text-anchor="middle">工具结果</text>
+  <text x="766" y="462" font-size="12" fill="#1f2328">请求返回</text>
+  <rect x="818" y="450" width="70" height="18" rx="3" fill="#fff3c4"/>
+  <text x="823" y="463" font-size="12" font-weight="600" fill="#8a5a00">错误码 500</text>
+  <text x="898" y="462" font-size="12" fill="#1f2328">，重试 2 次</text>
+
+  <text x="704" y="524" font-size="12" font-weight="600" fill="#1f2328">鉴权排查</text>
+  <text x="1196" y="524" font-size="10" fill="#8a919b" text-anchor="end">10:19</text>
+  <rect x="704" y="538" width="36" height="18" rx="9" fill="#f1f3f5"/>
+  <text x="722" y="551" font-size="10" fill="#6b7280" text-anchor="middle">助手</text>
+  <text x="750" y="552" font-size="12" fill="#1f2328">重点检查</text>
+  <rect x="804" y="540" width="42" height="18" rx="3" fill="#fff3c4"/>
+  <text x="808" y="553" font-size="12" font-weight="600" fill="#8a5a00">token</text>
+  <text x="852" y="552" font-size="12" fill="#1f2328">过期与请求头时区</text>
+
+  <line x1="680" y1="668" x2="1240" y2="668" stroke="#eef0f3"/>
+  <text x="704" y="696" font-size="11" fill="#6b7280">3 条命中 · 3 个对话</text>
+  <text x="864" y="696" font-size="11" fill="#8a919b">已扫描 12 个对话</text>
+  <text x="1216" y="696" font-size="11" fill="#8a919b" text-anchor="end">86 ms</text>
+  <text x="704" y="758" font-size="11" fill="#8a919b">输入即搜 · 点击结果自动定位并高亮</text>
+
+  <!-- numbered badges -->
+  <circle cx="660" cy="188" r="11" fill="#e8590c"/>
+  <text x="660" y="192" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <circle cx="660" cy="240" r="11" fill="#e8590c"/>
+  <text x="660" y="244" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+  <circle cx="660" cy="292" r="11" fill="#e8590c"/>
+  <text x="660" y="296" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <circle cx="660" cy="372" r="11" fill="#e8590c"/>
+  <text x="660" y="376" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+
+  <!-- legend -->
+  <text x="680" y="840" font-size="11" fill="#4b5563">③ 输入内容，自动搜索</text>
+  <text x="680" y="862" font-size="11" fill="#4b5563">④ 选择范围：当前对话 / 当前工作区</text>
+  <text x="680" y="884" font-size="11" fill="#4b5563">⑤ 选择方式：模糊 / 关键词 / 正则</text>
+  <text x="680" y="906" font-size="11" fill="#4b5563">⑥ 点击结果打开对应对话</text>
+
+  <text x="1000" y="840" font-size="11" fill="#8a919b">① 输入框下方的「检索」</text>
+  <text x="1000" y="862" font-size="11" fill="#8a919b">② 或在对话中按 ⌘⇧K</text>
+  <text x="1000" y="884" font-size="11" fill="#8a919b">输入框工具行左侧也有放大镜</text>
+</svg>
